@@ -63,7 +63,7 @@ In a production insurance environment, data is ingested across core systems:
 ---
 
 ## Model Limitations
-Residual diagnostics of the Refined LM revealed persistent heteroscedasticity among low-charge cohorts.
+Residual diagnostics of the Refined LM revealed persistent heteroscedasticity among higher-charge cohorts.
 
 ---
 
