@@ -37,9 +37,9 @@ In a production insurance environment, data is ingested across core systems:
 * **Finding:** Smoking status showed the strongest impact ($p < 0.001$).
 
 ### 2. Predictive Modeling & Diagnostic Evolution
-* **Baseline Linear Model ($R^2 = 0.805$):** High interpretability, but failed to capture joint non-linear risk.
-* **Random Forest ($R^2 = 0.872$):** Captured complex non-linear feature interactions, but lacks transparent logic.
-* **Refined LM with Interaction ($R^2 = 0.883$):** Manually adding `smoker * bmi` captured the primary risk structure, beating Random Forest while keeping full interpretability.
+* **Baseline Linear Model :** High interpretability, but failed to capture joint non-linear risk.
+* **Random Forest :** Captured complex non-linear feature interactions, but lacks transparent logic.
+* **Refined LM with Interaction :** Manually adding `smoker * bmi` captured the primary risk structure, beating Random Forest while keeping full interpretability.
 
 ---
 
@@ -47,9 +47,9 @@ In a production insurance environment, data is ingested across core systems:
 
 | Model | $R^2$ | MAE | RMSE | Key Performance Trade-off |
 | :--- | :---: | :---: | :---: | :--- |
-| **Baseline Linear Model** | 0.805 | 4,198.59 | 5,992.88 | Interpretable baseline; misses joint risk factors |
-| **Random Forest** | 0.872 | **2,694.25** | 4,857.83 | Lower MAE on typical cases; black-box structure |
-| **Refined LM (`smoker × bmi`)** | **0.883** | 2,828.54 | **4,629.25** | **Best overall $R^2$ & RMSE; directly converts to pricing rules** |
+| **Baseline Linear Model** | 0.8069 | 4,177.65 | 5,957.53 | Interpretable baseline; misses joint risk factors |
+| **Random Forest** | 0.8815 | **2,570.25** | 4,666.49 | Lower MAE on typical cases; black-box structure |
+| **Refined LM (`smoker × bmi`)** | **0.8869** | 2,794.21 | **4,559.75** | **Best overall $R^2$ & RMSE; directly converts to pricing rules** |
 
 *Note: Metrics evaluated on an out-of-sample test set.*
 
