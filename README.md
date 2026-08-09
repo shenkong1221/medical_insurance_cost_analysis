@@ -6,7 +6,7 @@ Built an end-to-end analytical framework to estimate U.S. medical insurance cost
 **Key Outcome:**
 * **Smoker status** is the dominant cost driver.
 * Introducing the interaction term `smoker × bmi` boosted the Baseline Linear Model $R^2$ from **0.807 to 0.887**, outperforming Random Forest (**0.882**) while retaining full model interpretability.
-* Data Visualisation **Tableau Public URL:** https://public.tableau.com/app/profile/rubykong/viz/MedicalInsuranceChargesAnalysis/Dashboard1
+* Data Visualisation **Tableau Public URL:** https://public.tableau.com/app/profile/rubykong/viz/MedicalInsuranceChargesAnalysis/Dashboard2
 
 
 ---
